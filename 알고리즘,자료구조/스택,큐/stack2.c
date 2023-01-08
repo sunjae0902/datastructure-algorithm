@@ -8,7 +8,7 @@
 #include "stack2.h"
 //스택 구현
 int top=-1; //스택의 맨 마지막 인덱스를 나타내는 전역변수
-void Push(int a[],int n){
+void Push(int a[],int n){ //데이터 n을 push
     if (top>9999){
         printf("스택이 꽉 찼습니다.\n");
         return;}
@@ -17,7 +17,7 @@ void Push(int a[],int n){
         return;}
     
 }
-void Pop(int a[]){
+void Pop(int a[]){ //배열에서 pop -> 인덱스 하나 감소
     if (top<0){
         printf("pop할 데이터가 없습니다\n");
         return;
@@ -27,7 +27,7 @@ void Pop(int a[]){
     }
 }
 
-void Show(int a[]){
+void Show(int a[]){ //스택 
     for (int i=0;i<top;i++){
         printf("%d\n",a[i]);
     }
